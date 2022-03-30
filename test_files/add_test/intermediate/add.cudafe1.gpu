@@ -1,0 +1,31 @@
+typedef char __nv_bool;
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h" 3
+typedef unsigned long size_t;
+#include "crt/device_runtime.h"
+# 231 "/usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h" 3
+typedef unsigned long _ZSt6size_t;
+# 5 "add.cu"
+__global__ __var_used__ extern void _Z3addiPfS_(int, float *, float *);
+#include "common_functions.h"
+# 5 "add.cu"
+__global__ __var_used__ void _Z3addiPfS_(
+# 5 "add.cu"
+int n, 
+# 5 "add.cu"
+float *x, 
+# 5 "add.cu"
+float *y){
+# 6 "add.cu"
+{
+# 7 "add.cu"
+{
+# 7 "add.cu"
+ int i;
+# 7 "add.cu"
+i = 0;
+# 7 "add.cu"
+for (; (i < n); i++) {
+# 8 "add.cu"
+(y[i]) = ((x[i]) + (y[i])); } } 
+# 9 "add.cu"
+}}

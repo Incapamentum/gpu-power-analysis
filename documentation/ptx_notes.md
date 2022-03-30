@@ -24,13 +24,13 @@
 
 ## Data Types
 
-| **Basic Type**   | **Fundamental Type Specifier**  |
-| ---------------- | ------------------------------- |
-| Signed Integer   | `.s8`, `.s16`, `.s32`, `.s64`   |
-| Unsigned Integer | `.u8`, `.u16`, `.u32`, `.u64`   |
-| Floating-Point   | `.f16`, `.f16`x2, `.f32, `.f64` |
-| Bits (untyped)   | `.b8`, `.b16`, `.b32`, `.b64`   |
-| Predicate        | `.pred`                         |
+| **Basic Type**   | **Fundamental Type Specifier**    |
+| ---------------- | --------------------------------- |
+| Signed Integer   | `.s8`, `.s16`, `.s32`, `.s64`     |
+| Unsigned Integer | `.u8`, `.u16`, `.u32`, `.u64`     |
+| Floating-Point   | `.f16`, `.f16x2`, `.f32 `, `.f64` |
+| Bits (untyped)   | `.b8`, `.b16`, `.b32`, `.b64`     |
+| Predicate        | `.pred`                           |
 
 ## Comparison & Selection Instructions
 
