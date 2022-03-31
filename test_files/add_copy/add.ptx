@@ -12,34 +12,26 @@
 
 	// .globl	_Z3addiPfS_
 
-//This is the main entrance of the function
-//	add(int n, float *x, float *y)
 .visible .entry _Z3addiPfS_(
 	.param .u32 _Z3addiPfS__param_0,
 	.param .u64 _Z3addiPfS__param_1,
 	.param .u64 _Z3addiPfS__param_2
 )
 {
-	// Figure out what this ends up actually doing
 	.reg .pred 	%p<6>;
 	.reg .f32 	%f<16>;
 	.reg .b32 	%r<18>;
 	.reg .b64 	%rd<20>;
 
-	// Loads the params to the proper registers(?)
+
 	ld.param.u32 	%r10, [_Z3addiPfS__param_0];
 	ld.param.u64 	%rd13, [_Z3addiPfS__param_1];
 	ld.param.u64 	%rd14, [_Z3addiPfS__param_2];
-
-	// Converts a generic address to a global address
 	cvta.to.global.u64 	%rd1, %rd14;
 	cvta.to.global.u64 	%rd2, %rd13;
-
-	// Returns if 'n' is less than 1
 	setp.lt.s32 	%p1, %r10, 1;
 	@%p1 bra 	$L__BB0_7;
 
-	// The initial iteration stuff?
 	add.s32 	%r12, %r10, -1;
 	and.b32  	%r17, %r10, 3;
 	setp.lt.u32 	%p2, %r12, 3;
