@@ -5,3 +5,6 @@
 ```nvcc -keep-dir=./intermediate/ -keep -gencode arch=compute_75,code=sm_75 add.cu add_test.cu```
 
 ```nvcc -ptx -gencode arch=compute_75,code=sm_75 add.cu add_test.cu```
+
+This option is better since everything is compiled thru a virtual arch, i.e. PTX
+```nvcc -gencode arch=compute_75,code=compute_75 add.cu add_test.cu```
