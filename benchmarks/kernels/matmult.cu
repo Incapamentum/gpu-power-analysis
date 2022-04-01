@@ -1,5 +1,7 @@
+#include "kernels.cuh"
+
 __global__
-void mm_simple(float *c, float *a, float *b, int n)
+void matmult(float *c, float *a, float *b, int n)
 {
     int row, col, k;
     float sum = 0.0f;
