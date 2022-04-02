@@ -25,7 +25,7 @@ int main(void)
     int *a, *b, *c;
     int size;
 
-    size = M * sizeof(int);
+    size = DOT_ELEMENTS * sizeof(int);
 
     a = (int *)malloc(size);
     b = (int *)malloc(size);
@@ -33,7 +33,7 @@ int main(void)
 
     srand(time(0));
 
-    for (i = 0; i < M; i++)
+    for (i = 0; i < DOT_ELEMENTS; i++)
     {
         a[i] = rand() % 100;
         b[i] = rand() % 100;

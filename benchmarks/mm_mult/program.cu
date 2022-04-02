@@ -24,17 +24,17 @@ void matrixMultiplication(float *c, float *a, float *b, int n)
 
 int main(void)
 {
-    float a[WIDTH * WIDTH], b[WIDTH * WIDTH], c[WIDTH * WIDTH];
+    float a[M_WIDTH * M_WIDTH], b[M_WIDTH * M_WIDTH], c[M_WIDTH * M_WIDTH];
     int i;
 
-    for (i = 0; i < (WIDTH * WIDTH); i++)
+    for (i = 0; i < (M_WIDTH * M_WIDTH); i++)
     {
         a[i] = 5;
         b[i] = 5;
         c[i] = 0;
     }
 
-    matrixMultiplication(c, a, b, WIDTH);
+    matrixMultiplication(c, a, b, M_WIDTH);
 
     return 0;
 }
