@@ -13,7 +13,7 @@ void matrixMultiplication(float *c, float *a, float *b, int n)
     cudaMalloc((void **)&bd, size);
     cudaMemcpy(bd, b, size, cudaMemcpyHostToDevice);
 
-    cudaMalloc((void **)*&cd, size);
+    cudaMalloc((void **)&cd, size);
 
     mm_mul<<<1, 1>>>(cd, ad, bd, n);
 

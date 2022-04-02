@@ -10,7 +10,6 @@ void singlePrecision(int n, float a, float *x, float *y)
     cudaMalloc(&d_y, n * sizeof(float));
     cudaMemcpy(d_y, y, n * sizeof(float), cudaMemcpyHostToDevice);
 
-    // SAXPY on 1M elements
     saxpy<<<1, 1>>>(n, a, d_x, d_y);
 
     cudaFree(d_x);
