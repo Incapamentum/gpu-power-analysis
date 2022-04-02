@@ -15,7 +15,7 @@ void matrixMultiplication(float *c, float *a, float *b, int n)
 
     cudaMalloc((void **)*&cd, size);
 
-    matmult<<<1, 1>>>(cd, ad, bd, n);
+    mm_mul<<<1, 1>>>(cd, ad, bd, n);
 
     cudaFree(cd);
     cudaFree(ad);

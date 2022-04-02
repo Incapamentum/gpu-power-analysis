@@ -1,7 +1,7 @@
 #include "mm_mul.cuh"
 
 __global__
-void matmult(float *c, float *a, float *b, int n)
+void mm_mul(float *c, float *a, float *b, int n)
 {
     int row, col, k;
     float sum = 0.0f;
