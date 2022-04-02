@@ -1,4 +1,4 @@
-#include "matmul.cuh"
+#include "mm_mul.cuh"
 
 __global__
 void matmult(float *c, float *a, float *b, int n)
