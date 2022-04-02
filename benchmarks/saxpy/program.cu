@@ -1,5 +1,5 @@
 #include "../definitions.cuh"
-#include "kernel.cuh"
+#include "saxpy.cuh"
 
 void singlePrecision(int n, float a, float *x, float *y)
 {

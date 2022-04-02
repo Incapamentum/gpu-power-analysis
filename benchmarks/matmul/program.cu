@@ -1,5 +1,5 @@
 #include "../definitions.cuh"
-#include "kernel.cuh"
+#include "matmul.cuh"
 
 void matrixMultiplication(float *c, float *a, float *b, int n)
 {

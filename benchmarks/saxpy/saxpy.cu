@@ -1,4 +1,4 @@
-#include "kernel.cuh"
+#include "saxpy.cuh"
 
 __global__
 void saxpy(int n, float a, float *x, float *y)

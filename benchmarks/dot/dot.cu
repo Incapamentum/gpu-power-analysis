@@ -1,5 +1,5 @@
 #include "../definitions.cuh"
-#include "kernel.cuh"
+#include "dot.cuh"
 
 __global__
 void dot(int *a, int *b, int *c)

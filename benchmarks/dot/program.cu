@@ -1,7 +1,7 @@
 #include <time.h>
 
 #include "../definitions.cuh"
-#include "kernel.cuh"
+#include "dot.cuh"
 
 void dotProduct(int *a, int *b, int *c, int size)
 {
