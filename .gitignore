@@ -1,0 +1,11 @@
+a.out
+dryrun.out
+pipeline.ptx
+*.cubin
+*.cudafe1.*
+*.fatbin
+*.fatbin.c
+*.module_id
+*.ii
+*.reg.c
+*.o
