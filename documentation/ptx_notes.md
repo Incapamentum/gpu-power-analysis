@@ -32,6 +32,25 @@
 | Bits (untyped)   | `.b8`, `.b16`, `.b32`, `.b64`     |
 | Predicate        | `.pred`                           |
 
+## Integer Arithmetic Instructions
+
+### mul
+
+- Multiply two values
+- `mul.mode.type d, a, b;`
+- `.mode = { .hi, .lo, .wide };`
+- `.type = { .u16, .u32, .u64, .s16, .s32, s64 };`
+- The `.type` of the operation represents the types of the `a` and `b` operands. If `.hi` or `.lo` is specified, then `d` is the same size as `a` and `b`, and either the upper or lower half of the result is written to the destination register. If `.wide` is specified, then `d` is twice as wide as `a` and `b` to receive the full result of the multiplication
+- The `.wide` suffice is supported only for 16- and 32-bit integer types
+
+## Floating-Point Instructions
+
+### fma
+
+- Performs a fused multiply-add with no loss of precision in the intermediate product and addition
+- `fma.rnd{.ftz}{.sat}.f32 d, a, b, c`
+- `.rnd = { .rn, .rz, .rm, .rp };`
+
 ## Comparison & Selection Instructions
 
 ### setp
