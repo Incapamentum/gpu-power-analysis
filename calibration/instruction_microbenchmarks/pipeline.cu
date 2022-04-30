@@ -185,34 +185,8 @@ int main(int argc, const char* argv[]){
 
     if(strcmp(argv[1],"Ovhd")==0){ Ovhd<<<Db, Dg>>>(d_c); }
     else if(strcmp(argv[1],"Add")==0){ Add<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Abs")==0){ Abs<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Bfind")==0){ Bfind<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Clz")==0){ Clz<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Cnot")==0){ Cnot<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Copysign")==0){ Copysign<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"DFAdd")==0){ DFAdd<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"DFDiv")==0){ DFDiv<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Div")==0){ Div<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"DivU")==0){ DivU<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Ex2")==0){ Ex2<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"FastSqrt")==0){ FastSqrt<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"FDiv")==0){ FDiv<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"HFAdd")==0){ HFAdd<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Lg2")==0){ Lg2<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"MAdd_cc")==0){ MAdd_cc<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"MMad_cc")==0){ MMad_cc<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"MSubc")==0){ MSubc<<<Db, Dg>>>(d_c); }
     else if(strcmp(argv[1],"Mul")==0){ Mul<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Mul24")==0){ Mul24<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Mul64Hi")==0){ Mul64Hi<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Popc")==0){ Popc<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Rcp")==0){ Rcp<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Rem")==0){ Rem<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"RemU")==0){ RemU<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Rsqrt")==0){ Rsqrt<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Sad")==0){ Sad<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Sin")==0){ Sin<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Sqrt")==0){ Sqrt<<<Db, Dg>>>(d_c); }
+    else if(strcmp(argv[1],"Ld")==0){ Ld<<<Db, Dg>>>(d_c); }
     else { printf("Wrong Instruction\n"); exit(0); }
 
     //====================== Kernel Start =========================
