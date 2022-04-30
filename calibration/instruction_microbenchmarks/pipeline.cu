@@ -186,7 +186,7 @@ int main(int argc, const char* argv[]){
     if(strcmp(argv[1],"Ovhd")==0){ Ovhd<<<Db, Dg>>>(d_c); }
     else if(strcmp(argv[1],"Add")==0){ Add<<<Db, Dg>>>(d_c); }
     else if(strcmp(argv[1],"Mul")==0){ Mul<<<Db, Dg>>>(d_c); }
-    else if(strcmp(argv[1],"Ld")==0){ Ld<<<Db, Dg>>>(d_c); }
+    else if(strcmp(argv[1],"Div")==0){ Div<<<Db, Dg>>>(d_c); }
     else { printf("Wrong Instruction\n"); exit(0); }
 
     //====================== Kernel Start =========================

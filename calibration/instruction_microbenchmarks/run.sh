@@ -1,6 +1,6 @@
 #!/bin/bash
 
-    	for func in Ovhd  Add  Mul  Ld
+    	for func in Ovhd  Add  Mul  Div
     	do 
         	echo "**************************************************************" >> output/$func
 			echo "Function --> " >> output/$func

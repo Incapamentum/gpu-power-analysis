@@ -4,4 +4,4 @@ __global__ void Add(int *c) {}
 
 __global__ void Mul(int *c) {}
 
-__global__ void Ld(int *c) {}
+__global__ void Div(int *c) {}
