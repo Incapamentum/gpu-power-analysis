@@ -9,3 +9,4 @@ pipeline.ptx
 *.ii
 *.reg.c
 *.o
+power_monitor
