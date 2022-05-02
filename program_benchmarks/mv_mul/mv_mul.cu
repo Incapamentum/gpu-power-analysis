@@ -1,7 +1,7 @@
 #include "mv_mul.cuh"
 
 __global__
-void mv_mul(int *a, int *b, int *c, int n)
+void mv_mul(float *c, float *a, float *b, int n)
 {
     int j, row, sum = 0;
 

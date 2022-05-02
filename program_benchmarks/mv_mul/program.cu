@@ -1,12 +1,12 @@
 #include "../definitions.cuh"
 #include "mv_mul.cuh"
 
-void matrixVectorMultiply(int *a, int *b, int *c, int n)
+void matrixVectorMultiply(float *c, float *a, float *b, int n)
 {
-    int *a_dev, *b_dev, *c_dev;
+    float *a_dev, *b_dev, *c_dev;
     int size;
 
-    size = N_WIDTH * sizeof(int)   ;
+    size = n * sizeof(int);
 
     cudaMalloc((void **)&a_dev, size * size);
     cudaMalloc((void **)&b_dev, size);
@@ -23,11 +23,11 @@ void matrixVectorMultiply(int *a, int *b, int *c, int n)
 int main(void)
 {
     int i, j;
-    int *a, *b, *c;
+    float *a, *b, *c;
 
-    a = new int[N_WIDTH * N_WIDTH];
-    b = new int[N_WIDTH];
-    c = new int[N_WIDTH];
+    a = new float[N_WIDTH * N_WIDTH];
+    b = new float[N_WIDTH];
+    c = new float[N_WIDTH];
 
     for (i = 0; i < N_WIDTH; i++)
     {
@@ -39,7 +39,7 @@ int main(void)
         b[i] = i + 1;
     }
 
-    matrixVectorMultiply(a, b, c, N_WIDTH);
+    matrixVectorMultiply(c, a, b, N_WIDTH);
 
     return 0;
 }
