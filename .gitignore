@@ -10,3 +10,4 @@ pipeline.ptx
 *.reg.c
 *.o
 power_monitor
+power_test
