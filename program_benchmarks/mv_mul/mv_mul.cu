@@ -12,5 +12,4 @@ void mv_mul(float *c, float *a, float *b, int n)
             sum = sum + a[row * n + j] * b[j];
 
     c[row] = sum;
-
 }
