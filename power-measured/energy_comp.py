@@ -3,10 +3,10 @@ import re
 import sys
 
 # Using this as default as this is where the files are located at
-BENCHMARK_PATH = "./program_benchmarks/"
+BENCHMARK_PATH = "../program_benchmarks/"
 
 # Path to the pickled calibration energy
-CALIBRATION_PATH = "./calibration/"
+CALIBRATION_PATH = "../calibration/"
 ENERGY_FILE = CALIBRATION_PATH + "instruction_energy.pickle"
 
 # The argument must be the name of the program to profile
